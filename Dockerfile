@@ -8,4 +8,5 @@ RUN apk add --no-cache --virtual .build-deps openssl \
     && wget --no-check-certificate https://raw.githubusercontent.com/yakeworld/nginx-alpine-ssl/master/entrypoint.sh -O /opt/entrypoint.sh \
     && chmod a+x /opt/entrypoint.sh
 ENTRYPOINT ["/opt/entrypoint.sh"]
+
 CMD ["nginx"] 
